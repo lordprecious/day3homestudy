@@ -4,9 +4,7 @@ var file = {}
 
 
 file.findMissing = function(arr1,arr2){
-  if(arr1.length === 0 || arr2.length === 0){
-    return 0;
-  }else if(arr1.length === arr2.length){
+  if((arr1.length === 0 || arr2.length === 0) || (arr1.length === arr2.length)){
     return 0;
   }else if(arr1.length < arr2.length){
     //var missingNumber;
